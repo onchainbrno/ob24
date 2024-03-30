@@ -5,6 +5,8 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://onchainbrno.github.io',
+  base: 'onchainbrno2024',
   integrations: [tailwind(), mdx()],
   i18n: {
     defaultLocale: "en",
