@@ -1,0 +1,26 @@
+---
+import '../styles/base.css';
+import '@fontsource/space-mono';
+import '@fontsource/space-mono/700.css';
+
+const {frontmatter} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+		<link rel="/style/custom.css" />
+	</head>
+	<body class="font-mono">
+		<div class="m-6">
+			<h1 class="text-7xl font-bold uppercase mb-10 mt-10">{frontmatter.title}</h1>
+			<article class="prose prose-stone">
+				<slot />
+			</article>
+		</div>
+	</body>
+</html>
