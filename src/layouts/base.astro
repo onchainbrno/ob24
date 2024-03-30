@@ -17,7 +17,10 @@ const {frontmatter} = Astro.props;
 	</head>
 	<body class="font-mono">
 		<div class="m-6">
-			<h1 class="text-7xl font-bold uppercase mb-10 mt-10">{frontmatter.title}</h1>
+			<div class="flex flex-wrap sm:flex-nowrap gap-4 items-center">
+				<img src="/ob24-logo.png" class="w-full h-full sm:w-32 sm:h-32 aspect-square hover:rotate-180 transition-all" />
+				<h1 class="text-6xl font-bold uppercase mb-10 mt-10">{frontmatter.title}</h1>
+			</div>
 			<article class="prose prose-stone">
 				<slot />
 			</article>

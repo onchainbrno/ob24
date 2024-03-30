@@ -2,4 +2,7 @@
 @tailwind components;
 
 @layer components {
+    a {
+        @apply hover:no-underline;
+    }
 }
