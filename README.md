@@ -1,6 +1,6 @@
 # Unchained Brno 2024
 
-Website for Onchain Brno 2024. Builded using [Astro](https://astro.build/).
+Website for Unchained Brno 2024. Builded using [Astro](https://astro.build/).
 
 ## License
 
